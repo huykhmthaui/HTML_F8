@@ -27,6 +27,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Responsive */
 .grid {
     width: 1800px;
     max-width: 100%;
