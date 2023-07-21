@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS in HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <style> 
+
+        html, body {
+            margin: 0;
+        }
+
+        .box {
+            width: calc(400px * 2);    
+            height: 120px;
+            background: rgb(190, 100, 124);
+        }
+
+        .box::after {
+            content: attr(data-title)
+        }
+
+        a::after {
+            content: "(" attr(href) ")";
+        }
+    </style>
+
+    <body>
+        <div class="box" data-title="Đây là data title"></div>
+
+        <a href="https://www.w3schools.com/html/default.asp">Học lập trình </a>
+
+        <h1>CSS Functions?</h1>
+        <ul>
+            <li>var()</li> <!-- Gọi giá trị của biến -->
+            <li>linear-gradient()</li> <!-- Tạo 1 dải biến đổi liên tục -->
+            <li>rgba()</li> <!-- Tạo màu với độ trong suốt tùy chỉnh -->
+            <li>rgb()</li> <!-- Tạo màu -->
+            <li>calc()</li> <!-- Tỉnh toán toán tử -->
+            <li>attr()</li> <!-- Lấy giá trị của một thuộc tính -->
+        </ul> 
+    </body>
+
+
+</html>

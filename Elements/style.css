@@ -1,0 +1,27 @@
+#fst-h.fst-h {
+    color: blue;
+}
+
+.fst-h {
+    color: yellow;
+}
+
+#fst-h {
+    color: red;
+}
+
+#fst-h {
+    color: violet;
+}
+
+h1 {
+    color: green !important;
+}
+
+* {
+    color: red ;
+}
+
+html {
+    color: gold;
+}

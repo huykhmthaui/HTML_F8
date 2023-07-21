@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS in HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <style> 
+
+        html, body {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .box {
+            width: 100%;    
+            height: 120px;
+            background: rgb(190, 100, 124);
+        }
+
+        h1:hover {
+            color: red;
+        }
+
+    </style>
+
+    <body>
+
+        <link rel="stylesheet" href="mystyle.css">
+        
+        <div class="box"></div>
+        <!-- hover phải đi sau link và visited
+            active phải đi sau hover
+            thứ tự thông thường: link -> visited -> hover -> active
+         -->
+        <h1>CSS Pseudo Classes?</h1>
+        <ul>
+            <li>:root</li> <!-- Tham chiếu đến phần tử gốc của html -->
+            <li>:hover</li> <!-- Tạo các thuộc tính cho 1 phần tử, kích hoạt khi di chuyển chuột vào phần tử đó -->
+            <li>:active</li> <!-- Tương tự như hover, nhưng kích hoạt khi bấm chuột vào, duy trì đến khi ngừng nhấn -->
+            <li>:first-child</li> <!-- Lấy phần tử con đầu tiên của 1 thứ gì đó, ví dụ như table hoặc menu -->
+            <!-- các biến thể : i:firstchild - lấy i phần tử đầu, first-child i lấy phần tử đầu == i -->
+            <li>:last-child</li> <!-- Tương tự f-c nhưng lấy phần tử cuối -->
+        </ul>
+        <!-- syntax của pseudo class -->
+        <!--
+            selector:pseudo-class {
+                property: value;
+            }
+        -->
+    </body>
+
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS in HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <!-- Absolute Unit, kích thước không đổi kể cả khi kích thước web thay đổi-->
+    <!-- Relative Unit, kích thước phụ thuộc vào kích thước body-->
+    <style> 
+        html {
+            font-size: 100%;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .lecacton {
+            width: 10%;
+            height: 20px;
+            background-color: blue;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+    </style>
+
+    <body>
+        <div class="box"></div>
+        <br>
+        <div class="lecacton"></div>
+
+        <div>
+            <h1>Absolute Units?</h1>
+            <ul>
+                <!-- Các đơn vị cố định-->
+                <li>px</li>
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc ..v.v..</li>
+            </ul>
+            <br>
+            <h1>Relative Units</h1>
+            <ul>
+                <li>%</li> <!-- Phụ thuộc vào độ lớn của thẻ chứa nó -->
+                <li>rem</li> <!-- Phụ thuộc vào font size của html-->
+                <li>em</li> <!-- Phụ thuộc vào thẻ gần nhất chứa thuộc tính mà nó đang được dùng để tính-->
+                <li>vw</li> <!-- viewport width, viewport height, bằng % của trình duyệt, 50vw thì to bằng 1/2 trình duyệt-->
+                <li>vh</li>
+                <li>vmin ..v.v..</li>
+            </ul>
+        </div>
+    </body>
+
+
+</html>

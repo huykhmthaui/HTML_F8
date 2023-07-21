@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Đăng nhập</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="flexbox.css">
+    </head>
+
+    <body>
+        
+        <!-- Nav bar -->
+        <div class="nav"> <!-- Flex container-->
+            <ul class="nav-list"> <!--Flex item-->
+                <li class="nav-item">
+                <a class="nav-link" href="http://127.0.0.1:5500/flexboxExam.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item">Kết nối</li>
+                <li class="nav-item">Tải ứng dụng</li>
+            </ul>
+            <ul class="nav-list"> <!--Flex item-->
+                <li class="nav-item">Đăng ký</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/flexbox_Sign.html">
+                        Đăng nhập
+                    </a></li>
+            </ul>
+        </div>
+
+        <!-- Form layout-->
+        <div class="form-container">
+            <h2 style="text-align: center;">Đăng nhập</h2>
+            <form action="" class="form">
+                <div class="form__row"> <!-- Flex container-->
+                    <label class="form__label" for="Account">Name: </label>
+                    <input class="form__input" type="text">
+                </div>
+                <div class="form__row"> <!-- Flex container-->
+                    <label class="form__label" for="Password">Password: </label>
+                    <input class="form__input" type="password">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

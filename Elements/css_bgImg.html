@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS in HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <!-- Background shorthand -->
+    <!-- Có dấu / trước background size -->
+    <style> 
+
+        html, body {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;    
+            height: 100vh;
+            background: url(https://omiprive.com/wp-content/uploads/2019/10/Ruby-1.png) no-repeat center / contain; 
+            /* background-image: url(https://omiprive.com/wp-content/uploads/2019/10/Ruby-1.png);
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: 100px 100px; 
+            background-attachment: fixed*/
+        }   
+    </style>
+        <!-- Background posi nhận 2 attribute, nếu chỉ nhập 1 thì thuộc tính còn lại mặc định là center-->
+        <!-- linear nhận các thuộc tính: Hướng xoay, màu điểm đầu + cuối -->
+        <!-- Contain sẽ lấy chiều ảnh dài nhất có thể, sao cho ảnh được hoàn chỉnh-->
+        <!-- Cover lấy cạnh dài hơn của bức ảnh, không quan tâm việc mất ảnh, không cho phép lộ khoảng trắng-->
+        <!-- Background attachment quyết định xem background đó có di chuyển theo scroll không
+        Nếu đặt giá trị là fixed thì khi kéo thanh bar xuống, hình ảnh vẫn giữ nguyên vị trí
+        Ngược lại scroll thì khi kéo bar xuống, ảnh sẽ trôi đi mất-->
+    <body>  
+        <div class="header"></div>
+    </body>
+
+
+</html>

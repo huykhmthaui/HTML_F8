@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS in HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div>
+            <h1 id="fst-h" class="fst-h"> Priority - Mức độ ưu tiên? </h1>
+            <ol>
+                <li>Internal, External?</li>
+                <!-- Khong co do uu tien giua inter va exter, ai goi sau se duoc uu tien -->
+                <!-- Do uu tien giam dan theo thu tu sau: -->
+                <li>Inline - 1000</li>
+                <li>#id - 100</li>
+                <li>.class - 10</li>
+                <li>tag - 1</li>
+                <li>Equal specificity? - Độ ưu tiên cân bằng?</li>
+                <!-- Khi có độ ưu tiên ngang nhau, thì ưu tiên cái được gọi sau -->
+                <!-- Độ ưu tiên được cộng vào nếu sử dụng nhiều phương thức, ví dụ: gọi cả id class tag sẽ có độ ưu tiên 1101-->
+                <li>Universal selector and inherited? - Selector chung và tính kế thừa</li>
+                <!-- Universal selector * có độ ưu tiên = 0 tuy nhiên vẫn ghi đè được inherited -->
+                <!-- Thuộc tính đặc biệt !important, có độ ưu tiên cao hơn tất cả, trừ những important khác -->
+            </ol>
+        </div>
+    </body>
+
+
+</html>

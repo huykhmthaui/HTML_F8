@@ -1,0 +1,252 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    background-color: lightgray;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+:root {
+    --size-o-f: 18px;
+}
+
+/* Navbar */
+.nav {
+    font-size: var(--size-o-f);
+    min-height: 42px;
+    background-color: #ef5122;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+
+.nav-list {
+    padding-left: 0;
+    margin: auto 16px;
+}
+
+.nav-item {
+    color: #fff;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+.nav-item:hover {
+    color: blue;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.nav-link:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Form layout */
+
+.form-container {
+    font-size: var(--size-o-f);
+    max-width: 50%;
+    padding: 32px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.form__row {
+    padding: 8px 0;
+    display: flex;
+}
+
+.form__label {
+    min-width: 90px;
+}
+
+.form__input {
+    flex: 1; /* flex là shorthand của flex-grow: 1/ flex-shrink:1/  flex-basis: 1 */
+}
+
+/* Column layout */
+
+.column-layout {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    padding: 12px 0;
+    background: #fff;
+    display: flex;
+    order: 2 1 3;
+}
+
+.column-item {
+    font-size: var(--size-o-f);
+    padding: 0 16px;
+}
+
+.sidebar-one {
+    text-align: left;
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-two {
+    text-align: left;
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-three {
+    text-align: left;
+    flex: 1;
+    order: 3;
+}
+
+/* Feature Layout */
+
+.feature-layout {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* If this used on PC */
+@media (min-width: 740px) {
+    .feature-layout {
+        flex-direction: row;
+    }
+}
+
+.feature-item {
+    font-size: var(--size-o-f);
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+
+
+
+.feature-item:nth-child(1) {
+    background-color: rgb(192, 220, 117);
+}
+
+.feature-item:nth-child(2) {
+    background-color: rgb(230, 120, 149);
+}
+
+.feature-item:nth-child(3) {
+    background-color: rgb(190, 110, 240);
+}
+
+/* Wrap Layout */
+.wrap-layout {  
+    background-color: white;
+    margin-top: 36px;
+    padding: 12px 0 32px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.wrap-layout__item {
+    background-color: #f47425;
+    color: white;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;   
+}
+
+/* Center layout */
+.center-layout {
+    background-color: rgb(190, 230, 200);
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    max-width: 640px;
+    height: 360px;
+    display: flex;
+}
+
+.center-layout__item {
+    font-size: 42px;
+    font-weight: bold;
+    margin: auto;
+}
+
+/* Chart layout */
+.chart-layout {
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    height: 320px;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.chart-layout__item {
+    width: 60px;
+    color: #fff;
+    background-color: #ef5122;
+    text-align: center;
+    height: var(--percent);
+    animation: growth ease-in 1s;
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        height: calc(var(--percent - 50%));
+    }
+    to {
+        opacity: 1;
+        height: calc(var(--percent));
+    }
+}
+
+/* The end */
+
+.the-end {
+    margin: 12px auto 48px auto;
+    padding: 32px 0;
+    max-width: 740px;
+    min-height: 360px;
+    display: flex;
+}
+
+.end-first {
+    padding: 4px 16px;
+    background-color: #fff;
+    flex: 1;
+}
+
+.end-second {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.end-second-one {
+    flex: 1;
+    background-color: violet;
+}
+
+.end-second-two {
+    flex: 1;
+    background-color: #f47425;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flexbox</title>
+        <meta charset="utf-8">
+        <style>
+            html, body {
+                margin: 0;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>CSS Flexbox</h1>
+        <ul>
+            <li>display: flex and inline Flex</li> <!-- Quyết định việc có sử dụng layout flex box hay không-->
+            <li>flex direction: row or column</li> <!-- Phương hướng của main axis-->
+            <li>flex wrap: nowrap, wrap, wrap-reverse</li> <!-- nowrap là mặc định, sử dụng để xuống dòng hoặc nhảy lên-->
+            <li>flex basis: length</li> <!-- kích thước của main size-->
+            <li>justify content: flex start/ end, center, space-between, space-around</li> <!-- căn flex item theo hướng của main axis, sử dụng là flex container-->
+            <li>justify self: flex start/end, center</li> <!-- vẫn là justify content nhưng sử dụng cho từng flex item-->
+            <li>align content: flex start/end, center</li> <!-- Tương tự như justify content nhưng theo cross axis-->
+            <li>align self: flex start/end, center</li> <!-- Tương tự như align content nhưng cho flex item-->
+            <li>flex grow: number</li> <!-- Thay đổi kích thước main size (flex item) to ra, giãn ra-->
+            <li>flex shrink: number</li> <!-- Ngược lại với grow-->
+            <li>flex</li> <!-- Shorthand của flex-->
+            <li>order</li> <!-- Quyết định thứ tự của flex item-->
+        </ul>
+    </body>
+</html>
+    <!-- Flex flow là shorthand của flex direc và flex wrap-->
+    <!-- Flex item nằm theo hướng main axis
+    Flex item hiển thị theo chiều main start -> main end
+    Cross axis quyết định các hàng sẽ xếp theo hướng nào, theo hướng cross start -> cross end
+     -->

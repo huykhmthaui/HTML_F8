@@ -1,0 +1,36 @@
+:root {
+    --size-cover: 24px;
+}
+
+p.header1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--size-cover);
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p.header2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--size-cover);
+    text-align: center;
+    font-weight: bold;  
+    text-transform: uppercase;
+}
+
+div.cover {
+    border: 1px solid black;
+    line-height: 70%;
+}
+
+div.inside {
+    line-height: 200%;
+}
+
+hr {
+    display: block;
+    width: 30%;
+    text-align: center;
+    border: 1px dashed;
+    margin-bottom: 100px;
+}

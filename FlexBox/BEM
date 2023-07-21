@@ -1,0 +1,46 @@
+## Ý nghĩa:
+- BEM là Block Element Modifier
+- Block là khối
+- Element là thành phần (trong khối)
+- Modifier: bổ sung ý nghĩa cho block hoặc elements (hay những chỉnh sửa thay đổi thực hiện lên nó)
+
+## Tại sao lại dùng BEM?
+- Dễ quản lý, dễ đọc đễ hiểu
+- Tránh việc trùng tên gây khó khăn khi sử dụng
+
+## Cú pháp
+- .block
+- .block__element
+- .block--modifier
+- .block__element--modifier
+
+## Ứng dụng
+- Xây dựng layout website
+- Xây dựng thành phần website
+
+## Ưu điểm
+- Rõ ràng, rành mạch
+- Dễ tái sử dụng
+- Giúp làm việc nhóm dễ hơn
+- Tính module, không khiến module của class này ảnh hưởng đến class khác
+
+## Nhược điểm
+- Tên class dài
+
+## Khi nào sử dụng BEM là hợp?
+- Dự án nhiều người tham gia
+- Dự án lớn, thời gian thực hiện dài
+
+## Thực hành
+- Làm button
+    + Enabled: Pointer, hover effect
+    + Disabled: Arrow, no effect
+- Làm messenge
+- Làm thành phần website
+
+# Giải quyết nhược điểm
+- Trường hợp block lồng block
+    + Block con là thành phần dùng chung
+    + Block con chứa nhiều element
+
+=> Muốn chỉnh sửa 1 block con là thành phần dùng chung theo ý muốn, ta tạo các class chung phục vụ cho mục đích đó

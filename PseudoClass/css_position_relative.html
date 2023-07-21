@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS POSITION</title>
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                margin: 0;
+            }
+
+            h1 {
+                margin-top: 40px;
+                padding: 0 16px;
+                color: #fff;
+                background-color: #333;
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+            }
+
+            li:nth-of-type(2) {
+                color: violet;
+            }
+
+            .box {
+                color: red;
+                font-size: 40px;
+                width: 100%;
+                height: 120px;
+                background-color: #333;
+                position: relative;
+            }
+
+            .box-child {
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .box2 {
+                width: 400px;
+                height: 100px;
+                background-color: violet;
+                position: relative;
+            }
+
+            ul {
+                height: 2000px;
+            }
+            
+            a {
+                align-self: center;
+                font-size: 30px;
+                color: red
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Position</h1>
+        <ul>
+            <li>Relative</li> <!-- Vị trí phụ thuộc vào trình duyệt, lấy bản thân làm gốc tọa độ để di chuyển-->
+            <li>Absolute</li> <!-- Vị trí cố định vào trình duyệt, lấy tag cha có posi gần nhất làm gốc tọa độ, sử dụng để di chuyển
+            đối tượng con quanh đối tượng cha
+            Khi không thể sử dụng cả top bottom, right và left -> ưu tiên top > bottom, ưu tiên left > right-->
+            <li>Fixed</li> <!-- Vị trí cố định vào scroll-->
+            <li>Sticky</li> <!-- Vị trí phụ thuộc vào scroll-->
+        </ul>
+    </body>
+</html>
