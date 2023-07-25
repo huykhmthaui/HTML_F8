@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assests/img/shurima.jpg" type="image/x-icon" />
     <title>The Band</title>
 </head>
 <body>
     <div id="main">
         <div class="header">
             <ul id="nav">
-                <li class="nav-items"><a class="nav-links" href="">Home</a></li>
-                <li class="nav-items"><a class="nav-links" href="">Band</a></li>
-                <li class="nav-items"><a class="nav-links" href="">Tour</a></li>
-                <li class="nav-items"><a class="nav-links" href="">Contact</a></li>
+                <li class="nav-items"><a class="nav-links" href="#">Home</a></li>
+                <li class="nav-items"><a class="nav-links" href="#Band">Band</a></li>
+                <li class="nav-items"><a class="nav-links" href="#Tour">Tour</a></li>
+                <li class="nav-items"><a class="nav-links" href="#Contact">Contact</a></li>
                 <li class="nav-items">
-                    <a class="nav-links" href="">
+                    <span class="nav-links">
                         More
                         <i class="nav-icons fa-solid fa-caret-down"></i>   
-                    </a>
+                    </span>
                     
                     <ul class="subnav">
-                        <li class="subnav-items"><a class="subnav-links" href="">Merchandise</a></li>
-                        <li class="subnav-items"><a class="subnav-links" href="">Extras</a></li>
-                        <li class="subnav-items"><a class="subnav-links" href="">Media</a></li>
+                        <li class="subnav-items"><a class="subnav-links" href="#">Merchandise</a></li>
+                        <li class="subnav-items"><a class="subnav-links" href="#">Extras</a></li>
+                        <li class="subnav-items"><a class="subnav-links" href="#">Media</a></li>
                     </ul>
                 </li>
                 <button class="nav-search">
@@ -44,7 +45,8 @@
         </div>
 
         <div class="content">
-            <div class="content-section">
+            <!-- About -->
+            <div id="Band" class="content-section">
                 <h2 class="section-heading">The Band</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">
@@ -77,7 +79,10 @@
                     
                 </div>
             </div>
-            <div class="section-black">
+            <!-- End About -->
+
+            <!-- Tickets -->
+            <div id="Tour" class="section-black">
                 <div class="content-section">
                     <h2 class="section-heading">Tour Dates</h2>
                     <p class="section-sub-heading">Remember to book your tickets!</p>
@@ -86,54 +91,128 @@
                         <li class="ticket-item">October <span class="ticket-status ticket-status--out">Sold out</span></li>
                         <li class="ticket-item">November <span class="ticket-status ticket-status--on">3</span></li>
                     </ul>
-                    <div class="place-list">
-                        <div class="place-item">
+                    <div class="row place-list">
+                        <div class="col col-third">
                             <img src="./assests/img/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy">Buy Tickets</button>
+                                <button class="btn">Buy Tickets</button>
                             </div>
                         </div>
-
-                        <div class="place-item">
+    
+                        <div class="col col-third">
                             <img src="./assests/img/paris.jpg" alt="New York" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy">Buy Tickets</button>
+                                <button class="btn">Buy Tickets</button>
                             </div>
                         </div>
-
-                        <div class="place-item">
+    
+                        <div class="col col-third">
                             <img src="./assests/img/sanfran.jpg" alt="New York" class="place-img">
                             <div class="place-content">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy">Buy Tickets</button>
+                                <button class="btn">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End tickets -->
 
-            <div class="content-section">
+            <!-- Contact -->
+            <div id="Contact" class="content-section">
                 <h2 class="section-heading">Contact</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
-            </div>
+                <div class="row contact-content">
+                    <div class="col col-half contact-infor">
+                        <p><i class="fa-solid fa-location-dot"></i> Shurima, Runeterra</p>
+                        <p><i class="fa-solid fa-phone"></i></i> Phone: +66980771234</p>
+                        <p><i class="fa-solid fa-envelope"></i> Email: shurima4ever@shurima.com</p>
+                    </div>
 
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row margt8">
+                                <div class="col col-half">
+                                    <input type="text" name="" required class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" required class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row margt16">
+                                <div class="col col-full">
+                                    <input type="text" name="" required class="form-control" placeholder="Message">
+                                </div>
+                            </div>
+                            <input class="btn margt16 to-right" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End contact -->
+
+            <!-- Map -->
+            <div class="map-section">
+                <img src="./assests/img/map.jpg" alt="Map">
+            </div>
         </div>
 
-        <div class="footer">
+        <div class="footer text-center clear">
+            <div class="socials-list">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-qq"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <p class="margt16">Powered by <a href="#">NQH</a></p>
+            </div>
 
         </div>
     </div>
 
     <div class="modal">
-        
+        <div class="modal-container">
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark"></i></i>
+            </div>
+            
+            <header class="modal-header">
+                <i class="modal-icon fa-solid fa-suitcase"></i>
+                Tickets
+            </header>
+            
+            <div class="modal-body">
+                <label for="quantity" class="modal-label">
+                    <i class="modal-icon fa-solid fa-cart-shopping"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="quantity" type="text" class="modal-input" placeholder="How many?">
+
+                <label for="email" class="modal-label">
+                    <i class="modal-icon fa-solid fa-user"></i>
+                    Send to
+                </label>
+                <input id="email" type="email" class="modal-input" placeholder="Enter your email...">
+
+                <button id="buy-tickets">
+                    Pay 
+                    <i class="modal-icon fa-solid fa-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="#" class="help-link">help?</a></p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
